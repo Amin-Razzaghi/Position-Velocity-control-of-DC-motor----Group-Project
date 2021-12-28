@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"amirgossein\startup_stm32f103xb.o"
+"amirgossein\main.o"
+"amirgossein\stm32f1xx_it.o"
+"amirgossein\stm32f1xx_hal_msp.o"
+"amirgossein\stm32f1xx_hal_gpio_ex.o"
+"amirgossein\stm32f1xx_hal_tim.o"
+"amirgossein\stm32f1xx_hal_tim_ex.o"
+"amirgossein\stm32f1xx_hal.o"
+"amirgossein\stm32f1xx_hal_rcc.o"
+"amirgossein\stm32f1xx_hal_rcc_ex.o"
+"amirgossein\stm32f1xx_hal_gpio.o"
+"amirgossein\stm32f1xx_hal_dma.o"
+"amirgossein\stm32f1xx_hal_cortex.o"
+"amirgossein\stm32f1xx_hal_pwr.o"
+"amirgossein\stm32f1xx_hal_flash.o"
+"amirgossein\stm32f1xx_hal_flash_ex.o"
+"amirgossein\stm32f1xx_hal_exti.o"
+"amirgossein\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "AMIRGOSSEIN\AMIRGOSSEIN.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AMIRGOSSEIN.map" -o AMIRGOSSEIN\AMIRGOSSEIN.axf
